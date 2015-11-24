@@ -1,0 +1,26 @@
+var classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o =
+[
+    [ "PersonajeDTO", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a9c517aebb849cee3b383d77081652a4c", null ],
+    [ "PersonajeDTO", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ae51a544e15ea8c8abf56f3cea563a827", null ],
+    [ "equals", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a439967085bb77cb822bdae1b7fcd372e", null ],
+    [ "getApodo", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ae081733256f0efb2ff82fa30b0ce1e45", null ],
+    [ "getArmadura", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a43ec12367b00d6367f37e18ad25c8abd", null ],
+    [ "getAtaque", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#aa31b8ee6d310a16d10738535356b93a5", null ],
+    [ "getDefensa", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a585a1721133f4541a5eeec25a6aa7ea0", null ],
+    [ "getDiscrecion", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ad3d0c6a88f3715400c314957b36cd5e7", null ],
+    [ "getFechaCreacion", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a342ea2ad7bab7c5457d97375fe95add5", null ],
+    [ "getFechaUltMod", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a51663f9d4c417d2c0432e2d46eb72ab5", null ],
+    [ "getTipo", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a1acc4fe9a701ca2828d6fd6e33a9d215", null ],
+    [ "getVelocidad", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ae7ed2ed66e12d3ef42a0cd670b777203", null ],
+    [ "getVida", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a3be157d1ea24525ec0a307cc507baa14", null ],
+    [ "setApodo", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a3d95956ca98cf9b74277968bdfc15327", null ],
+    [ "setArmadura", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a5c64f90d1de1a2f712a424bcae9178e3", null ],
+    [ "setAtaque", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#abf399cf831b709f9d49f95f1caeeb754", null ],
+    [ "setDefensa", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a742dd48266124f206395464cbde04b7f", null ],
+    [ "setDiscrecion", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#afb6383e8aca861d054379fb6aee3b3ca", null ],
+    [ "setFechaCreacion", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a3b77e6c57f655eca360ef89416b0e94d", null ],
+    [ "setFechaUltMod", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#adf2388cce299820653977b47c90519d1", null ],
+    [ "setTipo", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a885cbb0358d07b317c8c0f2a8b4c73f7", null ],
+    [ "setVelocidad", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ab02bc4dc92c6f3c2ad1f6425fd819af2", null ],
+    [ "setVida", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a64573bace7226b38523ef24de53de842", null ]
+];

@@ -1,0 +1,27 @@
+var classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto =
+[
+    [ "Objeto", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ae1a67a6e5f6e14632ec622d5e8c3ef1d", null ],
+    [ "Objeto", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#aa05dd1436222a60576fa7d6a4956e63b", null ],
+    [ "aniadirPersonaje", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a9c7cfca0877b8dd023ca3833ccb5f7f6", null ],
+    [ "eliminarPersonaje", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a44dc9a7acce28cfd24a646d47fd7876c", null ],
+    [ "equals", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a2c4d0e2bb5773c8fc67b4705887b9416", null ],
+    [ "getArmadura", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ae4297a07383ea9da8319c8fe5da18266", null ],
+    [ "getAtaque", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a6341bc39a45e9ecdf395ffe103b82531", null ],
+    [ "getDefensa", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a5ec769efb59a2a1dc55144eaba73b311", null ],
+    [ "getDiscrecion", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a6b8cc4c28ba9cac790830d16cea7f6ed", null ],
+    [ "getNombre", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ad677d91180ca77d2ba2d3e84524c9023", null ],
+    [ "getPersonajes", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ae18ab1ecc2cf933e9ed3a5adc29a80a7", null ],
+    [ "getTipo", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ab8772c99abed2a763eb343cd6c238414", null ],
+    [ "getVelocidad", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ad6edabe746803dc65fc9c7705aa8ac7d", null ],
+    [ "getVida", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a40079a07ad9ee70cfef818601a52e5a1", null ],
+    [ "numeroDePersonajes", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a5fbc1d7943fd58c723ef15d0899c0dfa", null ],
+    [ "setArmadura", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ad95d13fbd823ea147a1b405147ff70b8", null ],
+    [ "setAtaque", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ad6ce4904119eb800f3a1c0c24250a6f5", null ],
+    [ "setDefensa", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ae1c7efccb2567e4e472a61b323491141", null ],
+    [ "setDiscrecion", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a356a151fe13b62442cccedc64d314c20", null ],
+    [ "setNombre", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#aa36e75ff0feb1e50292bba4bfdaffa99", null ],
+    [ "setPersonajes", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a5790799c8cf861591bc3257e0962c8b8", null ],
+    [ "setTipo", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#acccbde3b5d80065e203cb6677830a247", null ],
+    [ "setVelocidad", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a3d88780721f80ee28b41526297cd5a3a", null ],
+    [ "setVida", "classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a528ca922ef15618d4baef73e2de4a4de", null ]
+];

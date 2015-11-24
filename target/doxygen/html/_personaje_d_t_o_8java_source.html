@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>TES_Character_Creator: Fichero Fuente src/main/java/es/deusto/spq/TEScc/dto/PersonajeDTO.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="doxygenLogo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TES_Character_Creator
+   </div>
+   <div id="projectbrief">Testing DOxygen</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_personaje_d_t_o_8java_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">PersonajeDTO.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_personaje_d_t_o_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>es.deusto.spq.TEScc.dto;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.io.Serializable;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">import</span> java.util.HashSet;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">import</span> java.util.Iterator;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">import</span> java.util.Set;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html">    8</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html">PersonajeDTO</a> <span class="keyword">implements</span> Serializable {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a4fae9f6ba64b6976e251df09c56d58eb">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a4fae9f6ba64b6976e251df09c56d58eb">ELFO</a> = 0;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#af6b6d74e020103d4cd1b9434ec24454b">   10</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keywordtype">int</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#af6b6d74e020103d4cd1b9434ec24454b">ORCO</a> = 1;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    String apodo;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    String fechaCreacion;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    String fechaUltMod;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> vida;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> velocidad;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> armadura;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> discrecion;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> ataque;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> defensa;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> tipo;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a9c517aebb849cee3b383d77081652a4c">   23</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a9c517aebb849cee3b383d77081652a4c">PersonajeDTO</a>() {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ae51a544e15ea8c8abf56f3cea563a827">   26</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ae51a544e15ea8c8abf56f3cea563a827">PersonajeDTO</a>(String apodo, String fechaCreacion, String fechaUltMod,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordtype">int</span> vida, <span class="keywordtype">int</span> velocidad, <span class="keywordtype">int</span> armadura, <span class="keywordtype">int</span> discrecion,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordtype">int</span> ataque, <span class="keywordtype">int</span> defensa, <span class="keywordtype">int</span> tipo) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        this.apodo = apodo;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        this.fechaCreacion = fechaCreacion;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        this.fechaUltMod = fechaUltMod;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        this.vida = vida;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        this.velocidad = velocidad;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        this.armadura = armadura;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        this.discrecion = discrecion;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        this.ataque = ataque;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        this.defensa = defensa;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        this.tipo = tipo;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ae081733256f0efb2ff82fa30b0ce1e45">   41</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ae081733256f0efb2ff82fa30b0ce1e45">getApodo</a>() {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> apodo;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a3d95956ca98cf9b74277968bdfc15327">   45</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a3d95956ca98cf9b74277968bdfc15327">setApodo</a>(String apodo) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        this.apodo = apodo;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a342ea2ad7bab7c5457d97375fe95add5">   49</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a342ea2ad7bab7c5457d97375fe95add5">getFechaCreacion</a>() {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> fechaCreacion;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a3b77e6c57f655eca360ef89416b0e94d">   53</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a3b77e6c57f655eca360ef89416b0e94d">setFechaCreacion</a>(String fechaCreacion) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        this.fechaCreacion = fechaCreacion;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a51663f9d4c417d2c0432e2d46eb72ab5">   57</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a51663f9d4c417d2c0432e2d46eb72ab5">getFechaUltMod</a>() {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> fechaUltMod;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#adf2388cce299820653977b47c90519d1">   61</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#adf2388cce299820653977b47c90519d1">setFechaUltMod</a>(String fechaUltMod) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        this.fechaUltMod = fechaUltMod;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a3be157d1ea24525ec0a307cc507baa14">   65</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a3be157d1ea24525ec0a307cc507baa14">getVida</a>() {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> vida;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a64573bace7226b38523ef24de53de842">   69</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a64573bace7226b38523ef24de53de842">setVida</a>(<span class="keywordtype">int</span> vida) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        this.vida = vida;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ae7ed2ed66e12d3ef42a0cd670b777203">   73</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ae7ed2ed66e12d3ef42a0cd670b777203">getVelocidad</a>() {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> velocidad;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ab02bc4dc92c6f3c2ad1f6425fd819af2">   77</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ab02bc4dc92c6f3c2ad1f6425fd819af2">setVelocidad</a>(<span class="keywordtype">int</span> velocidad) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        this.velocidad = velocidad;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a43ec12367b00d6367f37e18ad25c8abd">   81</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a43ec12367b00d6367f37e18ad25c8abd">getArmadura</a>() {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> armadura;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a5c64f90d1de1a2f712a424bcae9178e3">   85</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a5c64f90d1de1a2f712a424bcae9178e3">setArmadura</a>(<span class="keywordtype">int</span> armadura) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        this.armadura = armadura;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ad3d0c6a88f3715400c314957b36cd5e7">   89</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ad3d0c6a88f3715400c314957b36cd5e7">getDiscrecion</a>() {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> discrecion;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#afb6383e8aca861d054379fb6aee3b3ca">   93</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#afb6383e8aca861d054379fb6aee3b3ca">setDiscrecion</a>(<span class="keywordtype">int</span> discrecion) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        this.discrecion = discrecion;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#aa31b8ee6d310a16d10738535356b93a5">   97</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#aa31b8ee6d310a16d10738535356b93a5">getAtaque</a>() {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">return</span> ataque;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#abf399cf831b709f9d49f95f1caeeb754">  101</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#abf399cf831b709f9d49f95f1caeeb754">setAtaque</a>(<span class="keywordtype">int</span> ataque) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        this.ataque = ataque;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a585a1721133f4541a5eeec25a6aa7ea0">  105</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a585a1721133f4541a5eeec25a6aa7ea0">getDefensa</a>() {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span> defensa;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a742dd48266124f206395464cbde04b7f">  109</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a742dd48266124f206395464cbde04b7f">setDefensa</a>(<span class="keywordtype">int</span> defensa) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        this.defensa = defensa;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a1acc4fe9a701ca2828d6fd6e33a9d215">  113</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a1acc4fe9a701ca2828d6fd6e33a9d215">getTipo</a>() {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">return</span> tipo;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a885cbb0358d07b317c8c0f2a8b4c73f7">  117</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a885cbb0358d07b317c8c0f2a8b4c73f7">setTipo</a>(<span class="keywordtype">int</span> tipo) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        this.tipo = tipo;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a439967085bb77cb822bdae1b7fcd372e">  121</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a439967085bb77cb822bdae1b7fcd372e">equals</a>(<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html">PersonajeDTO</a> personaje) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> this.apodo.equals(personaje.getApodo());</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a3be157d1ea24525ec0a307cc507baa14"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a3be157d1ea24525ec0a307cc507baa14">es.deusto.spq.TEScc.dto.PersonajeDTO.getVida</a></div><div class="ttdeci">int getVida()</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00065">PersonajeDTO.java:65</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a4fae9f6ba64b6976e251df09c56d58eb"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a4fae9f6ba64b6976e251df09c56d58eb">es.deusto.spq.TEScc.dto.PersonajeDTO.ELFO</a></div><div class="ttdeci">static final int ELFO</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00009">PersonajeDTO.java:9</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a43ec12367b00d6367f37e18ad25c8abd"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a43ec12367b00d6367f37e18ad25c8abd">es.deusto.spq.TEScc.dto.PersonajeDTO.getArmadura</a></div><div class="ttdeci">int getArmadura()</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00081">PersonajeDTO.java:81</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_ae51a544e15ea8c8abf56f3cea563a827"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ae51a544e15ea8c8abf56f3cea563a827">es.deusto.spq.TEScc.dto.PersonajeDTO.PersonajeDTO</a></div><div class="ttdeci">PersonajeDTO(String apodo, String fechaCreacion, String fechaUltMod, int vida, int velocidad, int armadura, int discrecion, int ataque, int defensa, int tipo)</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00026">PersonajeDTO.java:26</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a585a1721133f4541a5eeec25a6aa7ea0"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a585a1721133f4541a5eeec25a6aa7ea0">es.deusto.spq.TEScc.dto.PersonajeDTO.getDefensa</a></div><div class="ttdeci">int getDefensa()</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00105">PersonajeDTO.java:105</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_adf2388cce299820653977b47c90519d1"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#adf2388cce299820653977b47c90519d1">es.deusto.spq.TEScc.dto.PersonajeDTO.setFechaUltMod</a></div><div class="ttdeci">void setFechaUltMod(String fechaUltMod)</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00061">PersonajeDTO.java:61</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_ad3d0c6a88f3715400c314957b36cd5e7"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ad3d0c6a88f3715400c314957b36cd5e7">es.deusto.spq.TEScc.dto.PersonajeDTO.getDiscrecion</a></div><div class="ttdeci">int getDiscrecion()</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00089">PersonajeDTO.java:89</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a342ea2ad7bab7c5457d97375fe95add5"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a342ea2ad7bab7c5457d97375fe95add5">es.deusto.spq.TEScc.dto.PersonajeDTO.getFechaCreacion</a></div><div class="ttdeci">String getFechaCreacion()</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00049">PersonajeDTO.java:49</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_aa31b8ee6d310a16d10738535356b93a5"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#aa31b8ee6d310a16d10738535356b93a5">es.deusto.spq.TEScc.dto.PersonajeDTO.getAtaque</a></div><div class="ttdeci">int getAtaque()</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00097">PersonajeDTO.java:97</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a742dd48266124f206395464cbde04b7f"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a742dd48266124f206395464cbde04b7f">es.deusto.spq.TEScc.dto.PersonajeDTO.setDefensa</a></div><div class="ttdeci">void setDefensa(int defensa)</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00109">PersonajeDTO.java:109</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a9c517aebb849cee3b383d77081652a4c"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a9c517aebb849cee3b383d77081652a4c">es.deusto.spq.TEScc.dto.PersonajeDTO.PersonajeDTO</a></div><div class="ttdeci">PersonajeDTO()</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00023">PersonajeDTO.java:23</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html">es.deusto.spq.TEScc.dto.PersonajeDTO</a></div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00008">PersonajeDTO.java:8</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a439967085bb77cb822bdae1b7fcd372e"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a439967085bb77cb822bdae1b7fcd372e">es.deusto.spq.TEScc.dto.PersonajeDTO.equals</a></div><div class="ttdeci">boolean equals(PersonajeDTO personaje)</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00121">PersonajeDTO.java:121</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a3d95956ca98cf9b74277968bdfc15327"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a3d95956ca98cf9b74277968bdfc15327">es.deusto.spq.TEScc.dto.PersonajeDTO.setApodo</a></div><div class="ttdeci">void setApodo(String apodo)</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00045">PersonajeDTO.java:45</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a885cbb0358d07b317c8c0f2a8b4c73f7"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a885cbb0358d07b317c8c0f2a8b4c73f7">es.deusto.spq.TEScc.dto.PersonajeDTO.setTipo</a></div><div class="ttdeci">void setTipo(int tipo)</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00117">PersonajeDTO.java:117</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a51663f9d4c417d2c0432e2d46eb72ab5"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a51663f9d4c417d2c0432e2d46eb72ab5">es.deusto.spq.TEScc.dto.PersonajeDTO.getFechaUltMod</a></div><div class="ttdeci">String getFechaUltMod()</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00057">PersonajeDTO.java:57</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a1acc4fe9a701ca2828d6fd6e33a9d215"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a1acc4fe9a701ca2828d6fd6e33a9d215">es.deusto.spq.TEScc.dto.PersonajeDTO.getTipo</a></div><div class="ttdeci">int getTipo()</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00113">PersonajeDTO.java:113</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_afb6383e8aca861d054379fb6aee3b3ca"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#afb6383e8aca861d054379fb6aee3b3ca">es.deusto.spq.TEScc.dto.PersonajeDTO.setDiscrecion</a></div><div class="ttdeci">void setDiscrecion(int discrecion)</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00093">PersonajeDTO.java:93</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_abf399cf831b709f9d49f95f1caeeb754"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#abf399cf831b709f9d49f95f1caeeb754">es.deusto.spq.TEScc.dto.PersonajeDTO.setAtaque</a></div><div class="ttdeci">void setAtaque(int ataque)</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00101">PersonajeDTO.java:101</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a5c64f90d1de1a2f712a424bcae9178e3"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a5c64f90d1de1a2f712a424bcae9178e3">es.deusto.spq.TEScc.dto.PersonajeDTO.setArmadura</a></div><div class="ttdeci">void setArmadura(int armadura)</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00085">PersonajeDTO.java:85</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_ae7ed2ed66e12d3ef42a0cd670b777203"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ae7ed2ed66e12d3ef42a0cd670b777203">es.deusto.spq.TEScc.dto.PersonajeDTO.getVelocidad</a></div><div class="ttdeci">int getVelocidad()</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00073">PersonajeDTO.java:73</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_ae081733256f0efb2ff82fa30b0ce1e45"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ae081733256f0efb2ff82fa30b0ce1e45">es.deusto.spq.TEScc.dto.PersonajeDTO.getApodo</a></div><div class="ttdeci">String getApodo()</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00041">PersonajeDTO.java:41</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_af6b6d74e020103d4cd1b9434ec24454b"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#af6b6d74e020103d4cd1b9434ec24454b">es.deusto.spq.TEScc.dto.PersonajeDTO.ORCO</a></div><div class="ttdeci">static final int ORCO</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00010">PersonajeDTO.java:10</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a64573bace7226b38523ef24de53de842"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a64573bace7226b38523ef24de53de842">es.deusto.spq.TEScc.dto.PersonajeDTO.setVida</a></div><div class="ttdeci">void setVida(int vida)</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00069">PersonajeDTO.java:69</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_a3b77e6c57f655eca360ef89416b0e94d"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#a3b77e6c57f655eca360ef89416b0e94d">es.deusto.spq.TEScc.dto.PersonajeDTO.setFechaCreacion</a></div><div class="ttdeci">void setFechaCreacion(String fechaCreacion)</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00053">PersonajeDTO.java:53</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html_ab02bc4dc92c6f3c2ad1f6425fd819af2"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html#ab02bc4dc92c6f3c2ad1f6425fd819af2">es.deusto.spq.TEScc.dto.PersonajeDTO.setVelocidad</a></div><div class="ttdeci">void setVelocidad(int velocidad)</div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00077">PersonajeDTO.java:77</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_adef24480b2fea2085e075e5be9225eb.html">src</a></li><li class="navelem"><a class="el" href="dir_d1268587f2d1eef61caa15bf95c72d58.html">main</a></li><li class="navelem"><a class="el" href="dir_d12f2aefffea9eef3f0d04e4c7d7db6b.html">java</a></li><li class="navelem"><a class="el" href="dir_7002f62a19d19731bd72d40b98ec0f72.html">es</a></li><li class="navelem"><a class="el" href="dir_04b14b4528aed5f2f63933f0b4f13f0b.html">deusto</a></li><li class="navelem"><a class="el" href="dir_8d8f11dc67df3f2c0894f093080b3a7a.html">spq</a></li><li class="navelem"><a class="el" href="dir_29eec20f40afaaefab632b49fbfbe6e7.html">TEScc</a></li><li class="navelem"><a class="el" href="dir_6aa5da5d1bdd10a1458b944686018ab0.html">dto</a></li><li class="navelem"><a class="el" href="_personaje_d_t_o_8java.html">PersonajeDTO.java</a></li>
+    <li class="footer">Generado el Martes, 27 de Mayo de 2014 00:39:32 para TES_Character_Creator por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

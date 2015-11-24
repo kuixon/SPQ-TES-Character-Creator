@@ -1,0 +1,318 @@
+\hypertarget{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade}{\section{Referencia de la Interfaz es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade}
+\label{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade}\index{es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade@{es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade}}
+}
+Diagrama de herencias de es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade}
+\end{center}
+\end{figure}
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_ac638041330e66a5575c692620ff5e715}{registro} (String nombre, String username, String contrasena)  throws Remote\+Exception
+\item 
+boolean \hyperlink{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_a0b9ec195d311f079b7f053f3ac0f9f22}{existe\+Usuario} (String username)  throws Remote\+Exception
+\item 
+boolean \hyperlink{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_a723d08ea6337d51312fc217d70e0d8c0}{login} (String username, String password)  throws Remote\+Exception
+\item 
+void \hyperlink{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_ad80d9e864a5e17a76c59aa30886f8e83}{darse\+Baja} (String username)  throws Remote\+Exception
+\item 
+Set$<$ \hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_d_t_o}{Objeto\+D\+T\+O} $>$ \hyperlink{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_a0bddee11d54b874ccf495c953f3558dd}{get\+Objetos} ()  throws Remote\+Exception
+\item 
+void \hyperlink{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_a6d86b34b1704cb69d2fccdcf658e3212}{guardar\+Personaje} (String username, String apodo, String fecha\+Creacion, String fecha\+Ult\+Mod, int vida, int velocidad, int armadura, int discrecion, int ataque, int defensa, int tipo, String\mbox{[}$\,$\mbox{]} objs)  throws Remote\+Exception
+\item 
+Set$<$ \hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o}{Personaje\+D\+T\+O} $>$ \hyperlink{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_abd919eb4e86d71f9e5ba783336418d20}{get\+Personajes\+Por\+Usuario} (String username)  throws Remote\+Exception
+\item 
+\hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o}{Personaje\+D\+T\+O} \hyperlink{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_af0dc2f7dcd891c7e0bae76899b60daf5}{get\+Personaje} (String apodo)  throws Remote\+Exception
+\item 
+void \hyperlink{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_abe23790fcd25b3b1f23210f913b652d4}{delete\+Personaje} (String apodo)  throws Remote\+Exception
+\item 
+Set$<$ \hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_d_t_o}{Objeto\+D\+T\+O} $>$ \hyperlink{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_af645550d86b3cd347024095efbbf4624}{get\+Objetos\+Por\+Personaje} (String apodo)  throws Remote\+Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Esta clase es la interfaz de nuestra aplicacion. Esta interfaz, contiene la cabecera de todos los metodos que se utilizaran. La llamada a estos metodos siempre se realizara desde la parte clienta y esta interfaz hara el papel de mediador entre cliente/servidor. Se formara una especia de recorrido pasando por varias clases (una de las cuales es esta) desde la parte clienta hasta la parte servidora. \begin{DoxyAuthor}{Autor}
+salgu\+\_\+000 
+\end{DoxyAuthor}
+
+
+Definición en la línea 18 del archivo I\+Facade.\+java.
+
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_ad80d9e864a5e17a76c59aa30886f8e83}{\index{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}!darse\+Baja@{darse\+Baja}}
+\index{darse\+Baja@{darse\+Baja}!es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}}
+\subsubsection[{darse\+Baja}]{\setlength{\rightskip}{0pt plus 5cm}void es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade.\+darse\+Baja (
+\begin{DoxyParamCaption}
+\item[{String}]{username}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}}\label{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_ad80d9e864a5e17a76c59aa30886f8e83}
+Este metodo eliminara del sistema al usuario que le pasemos por parametro (le dara de baja). 
+\begin{DoxyParams}{Parámetros}
+{\em username} & Nombre de usuario del usuario a dar de baja de la aplicacion \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implementado en \hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_facade_a458dfcc4b1129b9b6e08f41e63ce7086}{es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+Facade}.
+
+\hypertarget{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_abe23790fcd25b3b1f23210f913b652d4}{\index{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}!delete\+Personaje@{delete\+Personaje}}
+\index{delete\+Personaje@{delete\+Personaje}!es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}}
+\subsubsection[{delete\+Personaje}]{\setlength{\rightskip}{0pt plus 5cm}void es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade.\+delete\+Personaje (
+\begin{DoxyParamCaption}
+\item[{String}]{apodo}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}}\label{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_abe23790fcd25b3b1f23210f913b652d4}
+Este metodo eliminara un personaje de la base de datos. 
+\begin{DoxyParams}{Parámetros}
+{\em apodo} & Nombre del personaje que sera eliminado. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implementado en \hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_facade_ad813b0f96a122a76ec8f14d923d25796}{es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+Facade}.
+
+\hypertarget{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_a0b9ec195d311f079b7f053f3ac0f9f22}{\index{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}!existe\+Usuario@{existe\+Usuario}}
+\index{existe\+Usuario@{existe\+Usuario}!es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}}
+\subsubsection[{existe\+Usuario}]{\setlength{\rightskip}{0pt plus 5cm}boolean es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade.\+existe\+Usuario (
+\begin{DoxyParamCaption}
+\item[{String}]{username}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}}\label{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_a0b9ec195d311f079b7f053f3ac0f9f22}
+Este metodo lo utilizaremos para saber si el usuario que le pasamos por parametro ya esta almacenado en la base de datos (para saber si existe). 
+\begin{DoxyParams}{Parámetros}
+{\em username} & Nombre de usuario a buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true/false\+: Este metodo nos devuelve true si existe el usuario y false si no existe 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implementado en \hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_facade_ae25a9999c202d8c89edaa92131247ce9}{es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+Facade}.
+
+\hypertarget{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_a0bddee11d54b874ccf495c953f3558dd}{\index{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}!get\+Objetos@{get\+Objetos}}
+\index{get\+Objetos@{get\+Objetos}!es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}}
+\subsubsection[{get\+Objetos}]{\setlength{\rightskip}{0pt plus 5cm}Set$<${\bf Objeto\+D\+T\+O}$>$ es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade.\+get\+Objetos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}}\label{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_a0bddee11d54b874ccf495c953f3558dd}
+Este metodo nos devolvera todos los objetos de la aplicacion almacenados en un hash set. \begin{DoxyReturn}{Devuelve}
+Set$<$\+Objeto\+D\+T\+O$>$\+: Todos los objetos de la aplicacion. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implementado en \hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_facade_a8fcdd8c91b652b43b4928334cc9f3328}{es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+Facade}.
+
+\hypertarget{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_af645550d86b3cd347024095efbbf4624}{\index{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}!get\+Objetos\+Por\+Personaje@{get\+Objetos\+Por\+Personaje}}
+\index{get\+Objetos\+Por\+Personaje@{get\+Objetos\+Por\+Personaje}!es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}}
+\subsubsection[{get\+Objetos\+Por\+Personaje}]{\setlength{\rightskip}{0pt plus 5cm}Set$<${\bf Objeto\+D\+T\+O}$>$ es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade.\+get\+Objetos\+Por\+Personaje (
+\begin{DoxyParamCaption}
+\item[{String}]{apodo}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}}\label{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_af645550d86b3cd347024095efbbf4624}
+Este metodo nos permitira obtener todos los objetos que lleva un personaje. Para ello, tendremos que pasarle por parametro el nombre del personaje. 
+\begin{DoxyParams}{Parámetros}
+{\em apodo} & Nombre del personaje. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Set$<$\+Objeto\+D\+T\+O$>$\+: Objetos que tiene equipados el personaje almacenados en un hash set. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implementado en \hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_facade_ab9b38453cd1818c269f2632a9b113cca}{es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+Facade}.
+
+\hypertarget{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_af0dc2f7dcd891c7e0bae76899b60daf5}{\index{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}!get\+Personaje@{get\+Personaje}}
+\index{get\+Personaje@{get\+Personaje}!es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}}
+\subsubsection[{get\+Personaje}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Personaje\+D\+T\+O} es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade.\+get\+Personaje (
+\begin{DoxyParamCaption}
+\item[{String}]{apodo}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}}\label{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_af0dc2f7dcd891c7e0bae76899b60daf5}
+Este metodo nos permitira obtener un personaje conociendo su apodo (nombre). 
+\begin{DoxyParams}{Parámetros}
+{\em apodo} & Nombre del personaje. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Personaje\+D\+T\+O\+: Personaje obtenido tras realizar la busqueda utilizando su nombre. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implementado en \hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_facade_a737891228c477543f1b04a551a2f52c2}{es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+Facade}.
+
+\hypertarget{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_abd919eb4e86d71f9e5ba783336418d20}{\index{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}!get\+Personajes\+Por\+Usuario@{get\+Personajes\+Por\+Usuario}}
+\index{get\+Personajes\+Por\+Usuario@{get\+Personajes\+Por\+Usuario}!es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}}
+\subsubsection[{get\+Personajes\+Por\+Usuario}]{\setlength{\rightskip}{0pt plus 5cm}Set$<${\bf Personaje\+D\+T\+O}$>$ es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade.\+get\+Personajes\+Por\+Usuario (
+\begin{DoxyParamCaption}
+\item[{String}]{username}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}}\label{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_abd919eb4e86d71f9e5ba783336418d20}
+Este metodo nos servira para obtener todos los personajes que tiene un usuario. 
+\begin{DoxyParams}{Parámetros}
+{\em username} & Nombre de usuario del usuario para el que queremos obtener sus personajes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Set$<$\+Personaje\+D\+T\+O$>$\+: Personajes que tiene el usuario creados hasta el momento almacenados en un hash set. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implementado en \hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_facade_ad4fb2faa5b7665a375ab1a8dd40818fc}{es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+Facade}.
+
+\hypertarget{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_a6d86b34b1704cb69d2fccdcf658e3212}{\index{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}!guardar\+Personaje@{guardar\+Personaje}}
+\index{guardar\+Personaje@{guardar\+Personaje}!es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}}
+\subsubsection[{guardar\+Personaje}]{\setlength{\rightskip}{0pt plus 5cm}void es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade.\+guardar\+Personaje (
+\begin{DoxyParamCaption}
+\item[{String}]{username, }
+\item[{String}]{apodo, }
+\item[{String}]{fecha\+Creacion, }
+\item[{String}]{fecha\+Ult\+Mod, }
+\item[{int}]{vida, }
+\item[{int}]{velocidad, }
+\item[{int}]{armadura, }
+\item[{int}]{discrecion, }
+\item[{int}]{ataque, }
+\item[{int}]{defensa, }
+\item[{int}]{tipo, }
+\item[{String\mbox{[}$\,$\mbox{]}}]{objs}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}}\label{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_a6d86b34b1704cb69d2fccdcf658e3212}
+Este metodo almacenara un perosnaje en la base de datos con sus correspondientes datos (estos datos los recibira el metodo por parametro). 
+\begin{DoxyParams}{Parámetros}
+{\em username} & Nombre de usuario del usuario. \\
+\hline
+{\em apodo} & Nombre del personaje. \\
+\hline
+{\em fecha\+Creacion} & Fecha en la que el personaje es creado. \\
+\hline
+{\em fecha\+Ult\+Mod} & Fecha en la que el personaje es modificado. \\
+\hline
+{\em vida} & Nivel de vida del personaje. \\
+\hline
+{\em velocidad} & Nivel de velocidad del personaje. \\
+\hline
+{\em armadura} & Nivel de armadura del perosnaje. \\
+\hline
+{\em discrecion} & Nivel de discrecion del personaje. \\
+\hline
+{\em ataque} & Nivel de ataque del personaje. \\
+\hline
+{\em defensa} & Nivel de defensa del personaje. \\
+\hline
+{\em tipo} & Tipo de personaje (0 -\/$>$ Elfo // 1 -\/$>$ Orco). \\
+\hline
+{\em objs} & Nombre de los objetos que lleva el personaje. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implementado en \hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_facade_ae5642510ed14785330e9c7c367f10c93}{es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+Facade}.
+
+\hypertarget{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_a723d08ea6337d51312fc217d70e0d8c0}{\index{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}!login@{login}}
+\index{login@{login}!es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}}
+\subsubsection[{login}]{\setlength{\rightskip}{0pt plus 5cm}boolean es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade.\+login (
+\begin{DoxyParamCaption}
+\item[{String}]{username, }
+\item[{String}]{password}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}}\label{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_a723d08ea6337d51312fc217d70e0d8c0}
+Este metodo nos servira para saber si la contraseña introducida se corresponde a la del usuario en cuestion. Es por eso que recibe el nombre del usuario y la contraseña por parametros (para realizar la comprobacion). 
+\begin{DoxyParams}{Parámetros}
+{\em username} & Nombre de usuario del usuario a realizar la comprobacion. \\
+\hline
+{\em password} & Contraseña del usuario a realizar la comprobacion. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true/false\+: Si nos devuelve true es que la contraseña se corresponde con la contraseña de ese usuario. Si, por el contrario, nos devuelve false es que la contraseña introducida no es la de ese usuario. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implementado en \hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_facade_ad4be9c735e46f8e8f72d0d89e67cd2b2}{es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+Facade}.
+
+\hypertarget{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_ac638041330e66a5575c692620ff5e715}{\index{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}!registro@{registro}}
+\index{registro@{registro}!es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade@{es\+::deusto\+::spq\+::\+T\+E\+Scc\+::servidor\+::\+I\+Facade}}
+\subsubsection[{registro}]{\setlength{\rightskip}{0pt plus 5cm}boolean es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+I\+Facade.\+registro (
+\begin{DoxyParamCaption}
+\item[{String}]{nombre, }
+\item[{String}]{username, }
+\item[{String}]{contrasena}
+\end{DoxyParamCaption}
+) throws Remote\+Exception}}\label{interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_ac638041330e66a5575c692620ff5e715}
+Este metodo almacenara en la base de datos un nuevo usuario, lo registrara. Para ello, recibe por parametro los datos del usuario a registrar. La llamda a este metodo la realizaremos desde la clase Pantalla\+Registro. 
+\begin{DoxyParams}{Parámetros}
+{\em nombre} & Nombre del usuario a registrar. \\
+\hline
+{\em username} & Nombre de usuario del usuario a registrar. \\
+\hline
+{\em contrasena} & Contraseña del usuario a registrar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true/false\+: Si nos devuelve true es que el registro se ha realizado correctamente. Si por el contrario nos devulve false, es que no se ha podido realizar el registro porque el usuario a registrar ya existia. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em Remote\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implementado en \hyperlink{classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_facade_a7c19da5dcaeed4689168bccf1a82b626}{es.\+deusto.\+spq.\+T\+E\+Scc.\+servidor.\+Facade}.
+
+
+
+La documentación para este interfaz fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/es/deusto/spq/\+T\+E\+Scc/servidor/\hyperlink{_i_facade_8java}{I\+Facade.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>TES_Character_Creator: Fichero Fuente src/main/java/es/deusto/spq/TEScc/cliente/ControllerTES.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="doxygenLogo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TES_Character_Creator
+   </div>
+   <div id="projectbrief">Testing DOxygen</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_controller_t_e_s_8java_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ControllerTES.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_controller_t_e_s_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente.html">    1</a></span>&#160;<span class="keyword">package </span>es.deusto.spq.TEScc.cliente;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.rmi.RemoteException;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">import</span> java.util.Iterator;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">import</span> java.util.Set;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">import</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_d_t_o.html">es.deusto.spq.TEScc.dto.ObjetoDTO</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">import</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html">es.deusto.spq.TEScc.dto.PersonajeDTO</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">import</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_r_m_i_service_locator.html">es.deusto.spq.TEScc.cliente.RMIServiceLocator</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html">   11</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html">ControllerTES</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html">ControllerTES</a> instancia;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">private</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_r_m_i_service_locator.html">RMIServiceLocator</a> rmi;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#aa273f706656abed28640fb74d9ee166b">   16</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html">ControllerTES</a> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#aa273f706656abed28640fb74d9ee166b">getInstance</a>(<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_r_m_i_service_locator.html">RMIServiceLocator</a> rmi) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">if</span>(instancia == null) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            instancia = <span class="keyword">new</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a81fda8395f47c407a3f0d577c63f0d3b">ControllerTES</a>(rmi);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> instancia;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a81fda8395f47c407a3f0d577c63f0d3b">   24</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a81fda8395f47c407a3f0d577c63f0d3b">ControllerTES</a>(<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_r_m_i_service_locator.html">RMIServiceLocator</a> rmi) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        this.rmi = rmi;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#aff4caec980eda0f4398f4f2cf044fb4f">   28</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#aff4caec980eda0f4398f4f2cf044fb4f">registro</a>(String nombre, String username, String contrasena) <span class="keywordflow">throws</span> RemoteException {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> rmi.getService().<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#aff4caec980eda0f4398f4f2cf044fb4f">registro</a>(nombre, username, contrasena);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a452322848dcc1778a46244219881bafc">   32</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a452322848dcc1778a46244219881bafc">existeUsuario</a>(String username) <span class="keywordflow">throws</span> RemoteException {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> rmi.getService().<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a452322848dcc1778a46244219881bafc">existeUsuario</a>(username);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a2941198e1c2c65da73798b13b20a4ad8">   36</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a2941198e1c2c65da73798b13b20a4ad8">login</a>(String username, String password) <span class="keywordflow">throws</span> RemoteException {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> rmi.getService().<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a2941198e1c2c65da73798b13b20a4ad8">login</a>(username, password);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#acec2816a416111e9fdffba46bc58ab08">   40</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#acec2816a416111e9fdffba46bc58ab08">darseBaja</a>(String username) <span class="keywordflow">throws</span> RemoteException {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        rmi.getService().<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#acec2816a416111e9fdffba46bc58ab08">darseBaja</a>(username);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a1ffe0d7b4f3a46cd805f6e1717173fa5">   44</a></span>&#160;    <span class="keyword">public</span> Set&lt;ObjetoDTO&gt; <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a1ffe0d7b4f3a46cd805f6e1717173fa5">getObjetos</a>() throws RemoteException {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> rmi.getService().<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a1ffe0d7b4f3a46cd805f6e1717173fa5">getObjetos</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a40876e84dc3f730e116d40c0848877d1">   48</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a40876e84dc3f730e116d40c0848877d1">guardarPersonaje</a>(String username, String apodo,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            String fechaCreacion, String fechaUltMod, <span class="keywordtype">int</span> vida, <span class="keywordtype">int</span> velocidad,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordtype">int</span> armadura, <span class="keywordtype">int</span> discrecion, <span class="keywordtype">int</span> ataque, <span class="keywordtype">int</span> defensa, <span class="keywordtype">int</span> tipo,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            String[] objs) <span class="keywordflow">throws</span> RemoteException {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        rmi.getService().<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a40876e84dc3f730e116d40c0848877d1">guardarPersonaje</a>(username, apodo, fechaCreacion, fechaUltMod, vida, velocidad, armadura, discrecion, ataque, defensa, tipo, objs);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#aabc84fb108ea71f05f2d01d97cbc2cc7">   55</a></span>&#160;    <span class="keyword">public</span> Set&lt;PersonajeDTO&gt; <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#aabc84fb108ea71f05f2d01d97cbc2cc7">getPersonajesPorUsuario</a>(String username) <span class="keywordflow">throws</span> RemoteException {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        Set&lt;PersonajeDTO&gt; personajes = rmi.getService().<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#aabc84fb108ea71f05f2d01d97cbc2cc7">getPersonajesPorUsuario</a>(username);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">for</span>(Iterator&lt;PersonajeDTO&gt; i = personajes.iterator(); i.hasNext();) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html">PersonajeDTO</a> per = i.next();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            System.out.println(per.getApodo());</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> personajes;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a5016b0844fcbac2d36daef15349a5403">   64</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html">PersonajeDTO</a> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a5016b0844fcbac2d36daef15349a5403">getPersonaje</a>(String apodo) <span class="keywordflow">throws</span> RemoteException {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> rmi.getService().<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a5016b0844fcbac2d36daef15349a5403">getPersonaje</a>(apodo);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a3c4d1f112c6ff13f58c35f6e5477009d">   68</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a3c4d1f112c6ff13f58c35f6e5477009d">deletePersonaje</a>(String apodo) <span class="keywordflow">throws</span> RemoteException {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        rmi.getService().<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a3c4d1f112c6ff13f58c35f6e5477009d">deletePersonaje</a>(apodo);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a964193b764de995d32300c98c4931bcf">   72</a></span>&#160;    <span class="keyword">public</span> Set&lt;ObjetoDTO&gt; <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a964193b764de995d32300c98c4931bcf">getObjetosPorPersonaje</a>(String apodo) <span class="keywordflow">throws</span> RemoteException {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> rmi.getService().<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a964193b764de995d32300c98c4931bcf">getObjetosPorPersonaje</a>(apodo);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s_html_aff4caec980eda0f4398f4f2cf044fb4f"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#aff4caec980eda0f4398f4f2cf044fb4f">es.deusto.spq.TEScc.cliente.ControllerTES.registro</a></div><div class="ttdeci">boolean registro(String nombre, String username, String contrasena)</div><div class="ttdef"><b>Definition:</b> <a href="_controller_t_e_s_8java_source.html#l00028">ControllerTES.java:28</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s_html_a5016b0844fcbac2d36daef15349a5403"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a5016b0844fcbac2d36daef15349a5403">es.deusto.spq.TEScc.cliente.ControllerTES.getPersonaje</a></div><div class="ttdeci">PersonajeDTO getPersonaje(String apodo)</div><div class="ttdef"><b>Definition:</b> <a href="_controller_t_e_s_8java_source.html#l00064">ControllerTES.java:64</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s_html_a1ffe0d7b4f3a46cd805f6e1717173fa5"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a1ffe0d7b4f3a46cd805f6e1717173fa5">es.deusto.spq.TEScc.cliente.ControllerTES.getObjetos</a></div><div class="ttdeci">Set&lt; ObjetoDTO &gt; getObjetos()</div><div class="ttdef"><b>Definition:</b> <a href="_controller_t_e_s_8java_source.html#l00044">ControllerTES.java:44</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s_html_a452322848dcc1778a46244219881bafc"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a452322848dcc1778a46244219881bafc">es.deusto.spq.TEScc.cliente.ControllerTES.existeUsuario</a></div><div class="ttdeci">boolean existeUsuario(String username)</div><div class="ttdef"><b>Definition:</b> <a href="_controller_t_e_s_8java_source.html#l00032">ControllerTES.java:32</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o_html"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_personaje_d_t_o.html">es.deusto.spq.TEScc.dto.PersonajeDTO</a></div><div class="ttdef"><b>Definition:</b> <a href="_personaje_d_t_o_8java_source.html#l00008">PersonajeDTO.java:8</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s_html_a3c4d1f112c6ff13f58c35f6e5477009d"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a3c4d1f112c6ff13f58c35f6e5477009d">es.deusto.spq.TEScc.cliente.ControllerTES.deletePersonaje</a></div><div class="ttdeci">void deletePersonaje(String apodo)</div><div class="ttdef"><b>Definition:</b> <a href="_controller_t_e_s_8java_source.html#l00068">ControllerTES.java:68</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s_html_aabc84fb108ea71f05f2d01d97cbc2cc7"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#aabc84fb108ea71f05f2d01d97cbc2cc7">es.deusto.spq.TEScc.cliente.ControllerTES.getPersonajesPorUsuario</a></div><div class="ttdeci">Set&lt; PersonajeDTO &gt; getPersonajesPorUsuario(String username)</div><div class="ttdef"><b>Definition:</b> <a href="_controller_t_e_s_8java_source.html#l00055">ControllerTES.java:55</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s_html_acec2816a416111e9fdffba46bc58ab08"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#acec2816a416111e9fdffba46bc58ab08">es.deusto.spq.TEScc.cliente.ControllerTES.darseBaja</a></div><div class="ttdeci">void darseBaja(String username)</div><div class="ttdef"><b>Definition:</b> <a href="_controller_t_e_s_8java_source.html#l00040">ControllerTES.java:40</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s_html_a964193b764de995d32300c98c4931bcf"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a964193b764de995d32300c98c4931bcf">es.deusto.spq.TEScc.cliente.ControllerTES.getObjetosPorPersonaje</a></div><div class="ttdeci">Set&lt; ObjetoDTO &gt; getObjetosPorPersonaje(String apodo)</div><div class="ttdef"><b>Definition:</b> <a href="_controller_t_e_s_8java_source.html#l00072">ControllerTES.java:72</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s_html"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html">es.deusto.spq.TEScc.cliente.ControllerTES</a></div><div class="ttdef"><b>Definition:</b> <a href="_controller_t_e_s_8java_source.html#l00011">ControllerTES.java:11</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_r_m_i_service_locator_html"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_r_m_i_service_locator.html">es.deusto.spq.TEScc.cliente.RMIServiceLocator</a></div><div class="ttdef"><b>Definition:</b> <a href="_r_m_i_service_locator_8java_source.html#l00020">RMIServiceLocator.java:20</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s_html_a40876e84dc3f730e116d40c0848877d1"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a40876e84dc3f730e116d40c0848877d1">es.deusto.spq.TEScc.cliente.ControllerTES.guardarPersonaje</a></div><div class="ttdeci">void guardarPersonaje(String username, String apodo, String fechaCreacion, String fechaUltMod, int vida, int velocidad, int armadura, int discrecion, int ataque, int defensa, int tipo, String[] objs)</div><div class="ttdef"><b>Definition:</b> <a href="_controller_t_e_s_8java_source.html#l00048">ControllerTES.java:48</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s_html_aa273f706656abed28640fb74d9ee166b"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#aa273f706656abed28640fb74d9ee166b">es.deusto.spq.TEScc.cliente.ControllerTES.getInstance</a></div><div class="ttdeci">static synchronized ControllerTES getInstance(RMIServiceLocator rmi)</div><div class="ttdef"><b>Definition:</b> <a href="_controller_t_e_s_8java_source.html#l00016">ControllerTES.java:16</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_d_t_o_html"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_d_t_o.html">es.deusto.spq.TEScc.dto.ObjetoDTO</a></div><div class="ttdef"><b>Definition:</b> <a href="_objeto_d_t_o_8java_source.html#l00007">ObjetoDTO.java:7</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s_html_a81fda8395f47c407a3f0d577c63f0d3b"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a81fda8395f47c407a3f0d577c63f0d3b">es.deusto.spq.TEScc.cliente.ControllerTES.ControllerTES</a></div><div class="ttdeci">ControllerTES(RMIServiceLocator rmi)</div><div class="ttdef"><b>Definition:</b> <a href="_controller_t_e_s_8java_source.html#l00024">ControllerTES.java:24</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s_html_a2941198e1c2c65da73798b13b20a4ad8"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1cliente_1_1_controller_t_e_s.html#a2941198e1c2c65da73798b13b20a4ad8">es.deusto.spq.TEScc.cliente.ControllerTES.login</a></div><div class="ttdeci">boolean login(String username, String password)</div><div class="ttdef"><b>Definition:</b> <a href="_controller_t_e_s_8java_source.html#l00036">ControllerTES.java:36</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_adef24480b2fea2085e075e5be9225eb.html">src</a></li><li class="navelem"><a class="el" href="dir_d1268587f2d1eef61caa15bf95c72d58.html">main</a></li><li class="navelem"><a class="el" href="dir_d12f2aefffea9eef3f0d04e4c7d7db6b.html">java</a></li><li class="navelem"><a class="el" href="dir_7002f62a19d19731bd72d40b98ec0f72.html">es</a></li><li class="navelem"><a class="el" href="dir_04b14b4528aed5f2f63933f0b4f13f0b.html">deusto</a></li><li class="navelem"><a class="el" href="dir_8d8f11dc67df3f2c0894f093080b3a7a.html">spq</a></li><li class="navelem"><a class="el" href="dir_29eec20f40afaaefab632b49fbfbe6e7.html">TEScc</a></li><li class="navelem"><a class="el" href="dir_1af71e726dfb1047420370bb2779ab30.html">cliente</a></li><li class="navelem"><a class="el" href="_controller_t_e_s_8java.html">ControllerTES.java</a></li>
+    <li class="footer">Generado el Martes, 27 de Mayo de 2014 00:39:32 para TES_Character_Creator por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>TES_Character_Creator: Fichero Fuente src/main/java/es/deusto/spq/TEScc/dto/ObjetoAssembler.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="doxygenLogo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TES_Character_Creator
+   </div>
+   <div id="projectbrief">Testing DOxygen</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_objeto_assembler_8java_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">ObjetoAssembler.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_objeto_assembler_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto.html">    1</a></span>&#160;<span class="keyword">package </span>es.deusto.spq.TEScc.dto;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html">es.deusto.spq.TEScc.servidor.jdo.Objeto</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler.html">    5</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler.html">ObjetoAssembler</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler.html">ObjetoAssembler</a> instancia;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler.html#a004d564c3feda259f0731c7cea55c67a">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler.html">ObjetoAssembler</a> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler.html#a004d564c3feda259f0731c7cea55c67a">getInstance</a>() {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keywordflow">if</span>(instancia == null) {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            instancia = <span class="keyword">new</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler.html">ObjetoAssembler</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        }</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordflow">return</span> instancia;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler.html#a697a22d89a3c995deeb263d52084bfd4">   17</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_d_t_o.html">ObjetoDTO</a> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler.html#a697a22d89a3c995deeb263d52084bfd4">entityDTO</a>(<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html">Objeto</a> objeto) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_d_t_o.html">ObjetoDTO</a>(objeto.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ad677d91180ca77d2ba2d3e84524c9023">getNombre</a>(), objeto.getVida(), objeto.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ad6edabe746803dc65fc9c7705aa8ac7d">getVelocidad</a>(), objeto.getArmadura(),</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                objeto.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a6b8cc4c28ba9cac790830d16cea7f6ed">getDiscrecion</a>(), objeto.getAtaque(), objeto.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a5ec769efb59a2a1dc55144eaba73b311">getDefensa</a>(), objeto.getTipo());</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto_html_a6b8cc4c28ba9cac790830d16cea7f6ed"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a6b8cc4c28ba9cac790830d16cea7f6ed">es.deusto.spq.TEScc.servidor.jdo.Objeto.getDiscrecion</a></div><div class="ttdeci">int getDiscrecion()</div><div class="ttdef"><b>Definition:</b> <a href="_objeto_8java_source.html#l00073">Objeto.java:73</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto_html"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html">es.deusto.spq.TEScc.servidor.jdo.Objeto</a></div><div class="ttdef"><b>Definition:</b> <a href="_objeto_8java_source.html#l00009">Objeto.java:9</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler_html_a004d564c3feda259f0731c7cea55c67a"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler.html#a004d564c3feda259f0731c7cea55c67a">es.deusto.spq.TEScc.dto.ObjetoAssembler.getInstance</a></div><div class="ttdeci">static synchronized ObjetoAssembler getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_objeto_assembler_8java_source.html#l00009">ObjetoAssembler.java:9</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto_html_ad6edabe746803dc65fc9c7705aa8ac7d"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ad6edabe746803dc65fc9c7705aa8ac7d">es.deusto.spq.TEScc.servidor.jdo.Objeto.getVelocidad</a></div><div class="ttdeci">int getVelocidad()</div><div class="ttdef"><b>Definition:</b> <a href="_objeto_8java_source.html#l00057">Objeto.java:57</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto_html_ad677d91180ca77d2ba2d3e84524c9023"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ad677d91180ca77d2ba2d3e84524c9023">es.deusto.spq.TEScc.servidor.jdo.Objeto.getNombre</a></div><div class="ttdeci">String getNombre()</div><div class="ttdef"><b>Definition:</b> <a href="_objeto_8java_source.html#l00041">Objeto.java:41</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto_html_a5ec769efb59a2a1dc55144eaba73b311"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#a5ec769efb59a2a1dc55144eaba73b311">es.deusto.spq.TEScc.servidor.jdo.Objeto.getDefensa</a></div><div class="ttdeci">int getDefensa()</div><div class="ttdef"><b>Definition:</b> <a href="_objeto_8java_source.html#l00089">Objeto.java:89</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler_html"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler.html">es.deusto.spq.TEScc.dto.ObjetoAssembler</a></div><div class="ttdef"><b>Definition:</b> <a href="_objeto_assembler_8java_source.html#l00005">ObjetoAssembler.java:5</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_d_t_o_html"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_d_t_o.html">es.deusto.spq.TEScc.dto.ObjetoDTO</a></div><div class="ttdef"><b>Definition:</b> <a href="_objeto_d_t_o_8java_source.html#l00007">ObjetoDTO.java:7</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler_html_a697a22d89a3c995deeb263d52084bfd4"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1dto_1_1_objeto_assembler.html#a697a22d89a3c995deeb263d52084bfd4">es.deusto.spq.TEScc.dto.ObjetoAssembler.entityDTO</a></div><div class="ttdeci">ObjetoDTO entityDTO(Objeto objeto)</div><div class="ttdef"><b>Definition:</b> <a href="_objeto_assembler_8java_source.html#l00017">ObjetoAssembler.java:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_adef24480b2fea2085e075e5be9225eb.html">src</a></li><li class="navelem"><a class="el" href="dir_d1268587f2d1eef61caa15bf95c72d58.html">main</a></li><li class="navelem"><a class="el" href="dir_d12f2aefffea9eef3f0d04e4c7d7db6b.html">java</a></li><li class="navelem"><a class="el" href="dir_7002f62a19d19731bd72d40b98ec0f72.html">es</a></li><li class="navelem"><a class="el" href="dir_04b14b4528aed5f2f63933f0b4f13f0b.html">deusto</a></li><li class="navelem"><a class="el" href="dir_8d8f11dc67df3f2c0894f093080b3a7a.html">spq</a></li><li class="navelem"><a class="el" href="dir_29eec20f40afaaefab632b49fbfbe6e7.html">TEScc</a></li><li class="navelem"><a class="el" href="dir_6aa5da5d1bdd10a1458b944686018ab0.html">dto</a></li><li class="navelem"><a class="el" href="_objeto_assembler_8java.html">ObjetoAssembler.java</a></li>
+    <li class="footer">Generado el Martes, 27 de Mayo de 2014 00:39:32 para TES_Character_Creator por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

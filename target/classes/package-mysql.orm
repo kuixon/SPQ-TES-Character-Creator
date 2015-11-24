@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE orm SYSTEM "file:/javax/jdo/orm.dtd">
+<orm>
+    <package name="es.deusto.spq.TEScc.servidor.jdo">
+        <class name="Usuario">
+			<primary-key name="username"/>
+			<field name="nombre">
+                <column length="64" jdbc-type="VARCHAR"/>
+            </field>
+            <field name="username">
+                <column length="32" jdbc-type="VARCHAR"/>
+            </field>
+			<field name="contrasena" persistence-modifier="persistent">
+                <column length="32" jdbc-type="VARCHAR"/>
+            </field>
+			<field name="personajes" mapped-by="usuario">
+                <join/>
+            </field>
+        </class>
+        
+        <class name="Personaje">
+        	<primary-key name="id"/>
+        	<field name="id" value-strategy="increment" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="apodo" persistence-modifier="persistent">
+                <column length="32" jdbc-type="VARCHAR"/>
+            </field>
+			<field name="fechaCreacion" persistence-modifier="persistent">
+                <column length="32" jdbc-type="VARCHAR"/>
+            </field>
+            <field name="fechaUltMod" persistence-modifier="persistent">
+                <column length="32" jdbc-type="VARCHAR"/>
+            </field>
+            <field name="vida" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="velocidad" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="armadura" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="discrecion" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="ataque" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="defensa" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="tipo" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+			<field name="usuario" persistence-modifier="persistent">
+            </field>
+            <field name="objetos" mapped-by="personajes">
+                <join/>
+            </field>
+        </class>
+        
+        <class name="Objeto">
+        	<primary-key name="id"/>
+        	<field name="id" value-strategy="increment" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+        	<field name="nombre" persistence-modifier="persistent">
+                <column length="32" jdbc-type="VARCHAR"/>
+            </field>
+        	<field name="vida" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="velocidad" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="armadura" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="discrecion" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="ataque" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="defensa" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="tipo" persistence-modifier="persistent">
+                <column jdbc-type="BIGINT"/>
+            </field>
+            <field name="personajes" mapped-by="objetos">
+                <join/>
+            </field>
+        </class>
+    </package>
+</orm>
+
+

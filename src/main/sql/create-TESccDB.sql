@@ -1,0 +1,11 @@
+CREATE DATABASE TESccDB;
+
+GRANT ALTER, SELECT,INSERT,UPDATE,DELETE,CREATE,DROP, INDEX
+           ON TESccDB.*
+           TO spq@'%'
+           IDENTIFIED BY 'spq';
+
+GRANT ALTER, SELECT,INSERT,UPDATE,DELETE,CREATE,DROP, INDEX
+           ON TESccDB.*
+           TO spq@localhost
+           IDENTIFIED BY 'spq';

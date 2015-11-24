@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>TES_Character_Creator: Fichero Fuente src/main/java/es/deusto/spq/TEScc/servidor/Servidor.java</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="doxygenLogo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">TES_Character_Creator
+   </div>
+   <div id="projectbrief">Testing DOxygen</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_servidor_8java_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Servidor.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_servidor_8java.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>es.deusto.spq.TEScc.servidor;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.awt.EventQueue;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">import</span> java.rmi.Naming;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">import</span> java.rmi.RMISecurityManager;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">import</span> javax.swing.JFrame;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">import</span> javax.swing.JPanel;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">import</span> javax.swing.UIManager;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">import</span> javax.swing.border.EmptyBorder;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">import</span> <a class="code" href="interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade.html">es.deusto.spq.TEScc.servidor.IFacade</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">import</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html">es.deusto.spq.TEScc.servidor.jdo.Objeto</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">import</span> javax.swing.JButton;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">import</span> java.awt.event.ActionListener;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">import</span> java.awt.event.ActionEvent;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">import</span> javax.swing.JLabel;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> java.awt.Font;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> java.awt.Color;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> java.awt.Toolkit;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">import</span> javax.swing.ImageIcon;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">import</span> org.slf4j.LoggerFactory;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">import</span> org.slf4j.Logger;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor.html">   31</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor.html">Servidor</a> <span class="keyword">extends</span> JFrame {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">private</span> JPanel contentPane;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> String name;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">private</span> <span class="keyword">static</span> String serverName;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">private</span> JLabel lblDesconectado;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">private</span> JLabel lblConectado;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span> JLabel lblFondo;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">final</span> Logger logger = LoggerFactory.getLogger(Servidor.class);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor.html#ad649c5951fc4c399719bdd169d77d6e2">   41</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor.html#ad649c5951fc4c399719bdd169d77d6e2">main</a>(String[] args) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span> (args.length != 3) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            System.exit(0);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span> (System.getSecurityManager() == null) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            System.setSecurityManager(<span class="keyword">new</span> RMISecurityManager());</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        name = <span class="stringliteral">&quot;//&quot;</span> + args[0] + <span class="stringliteral">&quot;:&quot;</span> + args[1] + <span class="stringliteral">&quot;/&quot;</span> + args[2];</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        serverName = args[2];</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        EventQueue.invokeLater(<span class="keyword">new</span> Runnable() {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keyword">public</span> <span class="keywordtype">void</span> run() {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                    <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor.html">Servidor</a> frame = <span class="keyword">new</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor.html#af99256fabd60a31d22c4fa27f1d96909">Servidor</a>(name, serverName, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                    frame.setVisible(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                } <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    e.printStackTrace();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        });</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor.html#af99256fabd60a31d22c4fa27f1d96909">   65</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor.html#af99256fabd60a31d22c4fa27f1d96909">Servidor</a>(String n, String sn, <span class="keywordtype">boolean</span> test) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            UIManager.setLookAndFeel(<span class="stringliteral">&quot;javax.swing.plaf.nimbus.NimbusLookAndFeel&quot;</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        } <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        setIconImage(Toolkit.getDefaultToolkit().getImage(<span class="stringliteral">&quot;target\\classes\\img\\servidor.png&quot;</span>));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        setTitle(<span class="stringliteral">&quot;Servidor&quot;</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        setResizable(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        setSize(594, 292);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        setLocationRelativeTo(null);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        contentPane = <span class="keyword">new</span> JPanel();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        contentPane.setBorder(<span class="keyword">new</span> EmptyBorder(5, 5, 5, 5));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        setContentPane(contentPane);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        contentPane.setLayout(null);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        lblDesconectado = <span class="keyword">new</span> JLabel(<span class="stringliteral">&quot;DESCONECTADO&quot;</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        lblDesconectado.setBounds(250, 110, 107, 17);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        lblDesconectado.setForeground(Color.RED);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        lblDesconectado.setFont(<span class="keyword">new</span> Font(<span class="stringliteral">&quot;Tahoma&quot;</span>, Font.PLAIN, 14));</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        contentPane.add(lblDesconectado);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        lblConectado = <span class="keyword">new</span> JLabel(<span class="stringliteral">&quot;CONECTADO: &quot;</span> + name);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        lblConectado.setBounds(150, 110, 295, 17);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        lblConectado.setForeground(Color.GREEN);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        lblConectado.setFont(<span class="keyword">new</span> Font(<span class="stringliteral">&quot;Tahoma&quot;</span>, Font.PLAIN, 14));</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        lblConectado.setVisible(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        contentPane.add(lblConectado);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        lblFondo = <span class="keyword">new</span> JLabel(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        lblFondo.setIcon(<span class="keyword">new</span> ImageIcon(<span class="stringliteral">&quot;target\\classes\\img\\fondo.jpg&quot;</span>));</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        lblFondo.setBounds(0, 0, 623, 330);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        contentPane.add(lblFondo);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <a class="code" href="interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade.html">IFacade</a> tesccServer = <span class="keyword">new</span> <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_facade.html">Facade</a>(sn);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                Naming.rebind(n, tesccServer);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                lblDesconectado.setVisible(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                lblConectado.setVisible(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                logger.info(<span class="stringliteral">&quot;- Servidor de TES Character Creator &#39;&quot;</span> + n + <span class="stringliteral">&quot;&#39; activo y en espera...&quot;</span>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                logger.info(<span class="stringliteral">&quot;------------COMPROBACIONES-------------&quot;</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                logger.info(<span class="stringliteral">&quot;Numero de usuarios: &quot;</span> + DAODatabase.getInstance().numeroUsuarios());</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">if</span>(!test) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                    <span class="keywordflow">if</span>(!<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html">DAODatabase</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html#af127a34cb9b89d13574da3774b5233e9">getInstance</a>().existeObjeto(<span class="stringliteral">&quot;Yelmo Elfico&quot;</span>))</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                        DAODatabase.getInstance().crearObjeto(<span class="stringliteral">&quot;Yelmo Elfico&quot;</span>, 0, 25, 10, 25, 15, 15, <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html">Objeto</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#aad4056cca1c234c1388db2c39d542fa5">YELMO</a>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <span class="keywordflow">if</span>(!<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html">DAODatabase</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html#af127a34cb9b89d13574da3774b5233e9">getInstance</a>().existeObjeto(<span class="stringliteral">&quot;Armadura Elfica&quot;</span>))</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        DAODatabase.getInstance().crearObjeto(<span class="stringliteral">&quot;Armadura Elfica&quot;</span>, 0, 25, 15, 25, 10, 15, <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html">Objeto</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ae089b3cd9b53d0444e1e765a5a7d97d8">ARMADURA</a>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    <span class="keywordflow">if</span>(!<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html">DAODatabase</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html#af127a34cb9b89d13574da3774b5233e9">getInstance</a>().existeObjeto(<span class="stringliteral">&quot;Brazaletes Elficos&quot;</span>))</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                        DAODatabase.getInstance().crearObjeto(<span class="stringliteral">&quot;Brazaletes Elficos&quot;</span>, 0, 25, 10, 25, 15, 15, <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html">Objeto</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ae1705e9f36a42915ac8792c4c564c544">BRAZALETE</a>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    <span class="keywordflow">if</span>(!<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html">DAODatabase</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html#af127a34cb9b89d13574da3774b5233e9">getInstance</a>().existeObjeto(<span class="stringliteral">&quot;Botas Elficas&quot;</span>))</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                        DAODatabase.getInstance().crearObjeto(<span class="stringliteral">&quot;Botas Elficas&quot;</span>, 0, 25, 10, 25, 15, 15, <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html">Objeto</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#aa7f15eb9649a66e8d74e7875053fe229">BOTAS</a>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                    <span class="keywordflow">if</span>(!<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html">DAODatabase</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html#af127a34cb9b89d13574da3774b5233e9">getInstance</a>().existeObjeto(<span class="stringliteral">&quot;Yelmo Daedrico&quot;</span>))</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                        DAODatabase.getInstance().crearObjeto(<span class="stringliteral">&quot;Yelmo Daedrico&quot;</span>, 0, 8, 25, 8, 20, 20, <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html">Objeto</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#aad4056cca1c234c1388db2c39d542fa5">YELMO</a>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                    <span class="keywordflow">if</span>(!<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html">DAODatabase</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html#af127a34cb9b89d13574da3774b5233e9">getInstance</a>().existeObjeto(<span class="stringliteral">&quot;Armadura Daedrica&quot;</span>))</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                        DAODatabase.getInstance().crearObjeto(<span class="stringliteral">&quot;Armadura Daedrica&quot;</span>, 0, 5, 25, 5, 25, 25, <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html">Objeto</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ae089b3cd9b53d0444e1e765a5a7d97d8">ARMADURA</a>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                    <span class="keywordflow">if</span>(!<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html">DAODatabase</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html#af127a34cb9b89d13574da3774b5233e9">getInstance</a>().existeObjeto(<span class="stringliteral">&quot;Brazaletes Daedricos&quot;</span>))</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                        DAODatabase.getInstance().crearObjeto(<span class="stringliteral">&quot;Brazaletes Daedricos&quot;</span>, 0, 10, 25, 10, 18, 18, <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html">Objeto</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ae1705e9f36a42915ac8792c4c564c544">BRAZALETE</a>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                    <span class="keywordflow">if</span>(!<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html">DAODatabase</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html#af127a34cb9b89d13574da3774b5233e9">getInstance</a>().existeObjeto(<span class="stringliteral">&quot;Botas Daedricas&quot;</span>))</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                        DAODatabase.getInstance().crearObjeto(<span class="stringliteral">&quot;Botas Daedricas&quot;</span>, 0, 5, 25, 2, 20, 20, <a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html">Objeto</a>.<a class="code" href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#aa7f15eb9649a66e8d74e7875053fe229">BOTAS</a>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            } <span class="keywordflow">catch</span> (Exception ex) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                logger.error(<span class="stringliteral">&quot;$ Excepcion del servidor: &quot;</span> + ex.getMessage());</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                ex.printStackTrace();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto_html_ae1705e9f36a42915ac8792c4c564c544"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ae1705e9f36a42915ac8792c4c564c544">es.deusto.spq.TEScc.servidor.jdo.Objeto.BRAZALETE</a></div><div class="ttdeci">static final int BRAZALETE</div><div class="ttdef"><b>Definition:</b> <a href="_objeto_8java_source.html#l00012">Objeto.java:12</a></div></div>
+<div class="ttc" id="interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade_html"><div class="ttname"><a href="interfacees_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_i_facade.html">es.deusto.spq.TEScc.servidor.IFacade</a></div><div class="ttdef"><b>Definition:</b> <a href="_i_facade_8java_source.html#l00018">IFacade.java:18</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto_html_aa7f15eb9649a66e8d74e7875053fe229"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#aa7f15eb9649a66e8d74e7875053fe229">es.deusto.spq.TEScc.servidor.jdo.Objeto.BOTAS</a></div><div class="ttdeci">static final int BOTAS</div><div class="ttdef"><b>Definition:</b> <a href="_objeto_8java_source.html#l00013">Objeto.java:13</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto_html"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html">es.deusto.spq.TEScc.servidor.jdo.Objeto</a></div><div class="ttdef"><b>Definition:</b> <a href="_objeto_8java_source.html#l00009">Objeto.java:9</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor_html_ad649c5951fc4c399719bdd169d77d6e2"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor.html#ad649c5951fc4c399719bdd169d77d6e2">es.deusto.spq.TEScc.servidor.Servidor.main</a></div><div class="ttdeci">static void main(String[] args)</div><div class="ttdef"><b>Definition:</b> <a href="_servidor_8java_source.html#l00041">Servidor.java:41</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto_html_aad4056cca1c234c1388db2c39d542fa5"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#aad4056cca1c234c1388db2c39d542fa5">es.deusto.spq.TEScc.servidor.jdo.Objeto.YELMO</a></div><div class="ttdeci">static final int YELMO</div><div class="ttdef"><b>Definition:</b> <a href="_objeto_8java_source.html#l00010">Objeto.java:10</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor_html_af99256fabd60a31d22c4fa27f1d96909"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor.html#af99256fabd60a31d22c4fa27f1d96909">es.deusto.spq.TEScc.servidor.Servidor.Servidor</a></div><div class="ttdeci">Servidor(String n, String sn, boolean test)</div><div class="ttdef"><b>Definition:</b> <a href="_servidor_8java_source.html#l00065">Servidor.java:65</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_facade_html"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_facade.html">es.deusto.spq.TEScc.servidor.Facade</a></div><div class="ttdef"><b>Definition:</b> <a href="_facade_8java_source.html#l00014">Facade.java:14</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database_html"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html">es.deusto.spq.TEScc.servidor.DAODatabase</a></div><div class="ttdef"><b>Definition:</b> <a href="_d_a_o_database_8java_source.html#l00022">DAODatabase.java:22</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database_html_af127a34cb9b89d13574da3774b5233e9"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_d_a_o_database.html#af127a34cb9b89d13574da3774b5233e9">es.deusto.spq.TEScc.servidor.DAODatabase.getInstance</a></div><div class="ttdeci">static synchronized DAODatabase getInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_o_database_8java_source.html#l00030">DAODatabase.java:30</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor_html"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1_servidor.html">es.deusto.spq.TEScc.servidor.Servidor</a></div><div class="ttdef"><b>Definition:</b> <a href="_servidor_8java_source.html#l00031">Servidor.java:31</a></div></div>
+<div class="ttc" id="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto_html_ae089b3cd9b53d0444e1e765a5a7d97d8"><div class="ttname"><a href="classes_1_1deusto_1_1spq_1_1_t_e_scc_1_1servidor_1_1jdo_1_1_objeto.html#ae089b3cd9b53d0444e1e765a5a7d97d8">es.deusto.spq.TEScc.servidor.jdo.Objeto.ARMADURA</a></div><div class="ttdeci">static final int ARMADURA</div><div class="ttdef"><b>Definition:</b> <a href="_objeto_8java_source.html#l00011">Objeto.java:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_adef24480b2fea2085e075e5be9225eb.html">src</a></li><li class="navelem"><a class="el" href="dir_d1268587f2d1eef61caa15bf95c72d58.html">main</a></li><li class="navelem"><a class="el" href="dir_d12f2aefffea9eef3f0d04e4c7d7db6b.html">java</a></li><li class="navelem"><a class="el" href="dir_7002f62a19d19731bd72d40b98ec0f72.html">es</a></li><li class="navelem"><a class="el" href="dir_04b14b4528aed5f2f63933f0b4f13f0b.html">deusto</a></li><li class="navelem"><a class="el" href="dir_8d8f11dc67df3f2c0894f093080b3a7a.html">spq</a></li><li class="navelem"><a class="el" href="dir_29eec20f40afaaefab632b49fbfbe6e7.html">TEScc</a></li><li class="navelem"><a class="el" href="dir_084a5aaec0fe4efbf2ed5097e90e4077.html">servidor</a></li><li class="navelem"><a class="el" href="_servidor_8java.html">Servidor.java</a></li>
+    <li class="footer">Generado el Martes, 27 de Mayo de 2014 00:39:32 para TES_Character_Creator por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>
